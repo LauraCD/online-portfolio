@@ -6,7 +6,7 @@ Public Class Form7
             Dim thisconnection As System.Data.OleDb.OleDbConnection
             Dim dataset As System.Data.DataSet
             Dim mycommand As System.Data.OleDb.OleDbDataAdapter
-            Dim path As String = "DataFileName(.accdb)"
+            Dim path As String = "DataSaveFile(.accdb)"
 
             thisconnection = New System.Data.OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + path + ";")
             mycommand = New System.Data.OleDb.OleDbDataAdapter("select * from [CRTime] ORDER BY ID", thisconnection)
