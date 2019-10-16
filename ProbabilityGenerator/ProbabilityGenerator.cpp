@@ -1,8 +1,5 @@
 /**************************************************
- Project: The Tally Ho Probability Generator
- Assignment 1
- Author: Laura Chauca Diaz
- Purpose: Application File
+ Project: Probability Generator
 **************************************************/
 #include <iostream>
 #include <string>
@@ -58,7 +55,7 @@ int main() {
 
 void displayTitle() {
 	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
-	cout << "\tThe Tally Ho Probability Generator\n";
+	cout << "\t\t Probability Generator\n";
 	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 }
 
