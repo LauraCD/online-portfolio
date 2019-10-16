@@ -26,8 +26,8 @@ Public Class Form3
         Size = New Size(1100, 860)
         Me.CenterToParent()
         'pictureboxes
-        pic_slots.Image = Image.FromFile("L:\.LAURA\2019\Casino_Program1\icons\Logos\logoSlots.jpg")
-        pic_BlackJack.Image = Image.FromFile("L:\.LAURA\2019\Casino_Program1\icons\Logos\logo21.jpg")
+        pic_slots.Image = Image.FromFile("SlotsLogoImage")
+        pic_BlackJack.Image = Image.FromFile("21LogoImage")
         'timers
         tmr_bank.Enabled = True
         tmr_time.Enabled = True
@@ -47,12 +47,12 @@ Public Class Form3
         lbl_bankrupt.Text = "No"
         'saving time
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-        dataFile = "L:\.LAURA\2019\Casino_Program1\Time_Save\CasinoRoyale.accdb"
+        dataFile = "DataSaveFile(.accdb)"
         connString = provider & dataFile
         myConnection.ConnectionString = connString
         myConnection.Open()
         Dim str As String
-        str = "Insert into CRTime ([Hour],[Minute],[Second],[Bankrupt?]) Values (?, ?, ?, ?)"
+        str = "Insert into *tableName* ([Hour],[Minute],[Second],[Bankrupt?]) Values (?, ?, ?, ?)"
         Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
         cmd.Parameters.Add(New OleDbParameter("Hour", CType(lbl_hour.Text, Integer)))
         cmd.Parameters.Add(New OleDbParameter("Minute", CType(lbl_min.Text, Integer)))
@@ -90,18 +90,18 @@ Public Class Form3
             MsgBox("You went bankrupt and the Casino have KICKED YOU OUT!
 Bad luck :(")
             'saving time
-            provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-            dataFile = "L:\.LAURA\2019\Casino_Program1\Time_Save\CasinoRoyale.accdb"
-            connString = provider & dataFile
-            myConnection.ConnectionString = connString
-            myConnection.Open()
-            Dim str As String
-            str = "Insert into CRTime ([Hour],[Minute],[Second],[Bankrupt?]) Values (?, ?, ?, ?)"
-            Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
-            cmd.Parameters.Add(New OleDbParameter("Hour", CType(lbl_hour.Text, Integer)))
-            cmd.Parameters.Add(New OleDbParameter("Minute", CType(lbl_min.Text, Integer)))
-            cmd.Parameters.Add(New OleDbParameter("Second", CType(lbl_sec.Text, Integer)))
-            cmd.Parameters.Add(New OleDbParameter("Bankrupt?", CType(lbl_bankrupt.Text, String)))
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
+        dataFile = "DataSaveFile(.accdb)"
+        connString = provider & dataFile
+        myConnection.ConnectionString = connString
+        myConnection.Open()
+        Dim str As String
+        str = "Insert into *tableName* ([Hour],[Minute],[Second],[Bankrupt?]) Values (?, ?, ?, ?)"
+        Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
+        cmd.Parameters.Add(New OleDbParameter("Hour", CType(lbl_hour.Text, Integer)))
+        cmd.Parameters.Add(New OleDbParameter("Minute", CType(lbl_min.Text, Integer)))
+        cmd.Parameters.Add(New OleDbParameter("Second", CType(lbl_sec.Text, Integer)))
+        cmd.Parameters.Add(New OleDbParameter("Bankrupt?", CType(lbl_bankrupt.Text, String)))
 
             Try
                 cmd.ExecuteNonQuery()
