@@ -1,5 +1,8 @@
 /**************************************************
  Project: Silly Story 01
+ The story is made with data stored in variables, 
+ getting user input, displaying data to the screen
+ and doing simple calculations with variables.
 **************************************************/
 #include <iostream>
 #include <string>
@@ -28,7 +31,7 @@ int main() {
 	int otherStudents = numStudent - 1;
 	//Story
 	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-	cout << "                     TITLE IN PROGRESS                      " << endl;
+	cout << "                     PROGRAMMING CLASS                      " << endl;
 	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 	cout << "" << endl;
 	cout << "Everyone warned you, ";
