@@ -1,7 +1,6 @@
 #pragma once
 /**************************************************
 Project: MasterMind TG
-Assignment 3
 Author: Laura Chauca Diaz
 Purpose: Driver Header File
 **************************************************/
