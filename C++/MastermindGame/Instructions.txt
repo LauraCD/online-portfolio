@@ -1,0 +1,67 @@
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       MasterMind - Instructions
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ Hello, stranger. You must be the one they told me about. Hmmmmm...
+ I have my doubts about you, but you come with high praise from my
+ superiors. So, let's see if you truly have what it takes to reach 
+ the top ranks.
+
+ ...
+ What was that? Where *are* you???
+ Well, I haven't had a new member come abouts that didn't know what 
+ we do here, but I guess I can explain.
+
+   ----------------------------------------------------------------  
+
+ To prove your dexterity and mental skill, you will be provided with 
+ different marks. You are expected to complete each heist assigned 
+ to you, but the type and difficulty of each mark is up to you.
+ As your mentor, however, I will assess your success rate, and will
+ recommend a change of difficulty if I deem it necessary.
+
+ Depending on your rank within the guild, you will be given safes 
+ which have codes made up of different elements.
+  -> Initiates will work with numeric codes 
+     {0, 1, 2, 3, 4, 5, 6, 7}
+  -> Pick-pockets with alphabetic codes 
+     {A, B, C, D, E, F, G, H, I, J, K, L}
+     and
+  -> Master thieves will work with non-alphanumeric codes
+     {!, @, #, $, %, ^, &, *, (, ), =, +, <, >, ?, /}
+ 
+ You have a limited number of guesses to get the correct code before 
+ the safe's alarm is triggered, and your attempt is deemed a failure.
+
+ For each successful heist you will get to keep the loot inside.
+
+    ----------------------------------------------------------------  
+
+ So how do you know you're on the right track? Don't worry. You will 
+ be getting clues.
+
+ You won't be shown the specific order of your correct guesses - safe
+ cracking is not that easy! But you will be shown the following:
+  -> "o" means that one of the characters is correct and in the 
+     correct place
+  -> "?" means that one of the characters is correct but in the 
+     incorrect place
+
+ You won't receive any clues for incorrect characters.
+
+    ---------------------------------------------------------------- 
+
+ If you are ever in the middle of a mark, you can also do the 
+ following:
+  -> "P" will allow you to pause the game to view these instructions 
+     again
+  -> "R" will allow you to return to the main menu to select your 
+     difficulty settings
+  -> "Q" will allow you to quit the game completely
+
+    ----------------------------------------------------------------  
+
+    So, to answer your question...
+
+    You are...
+    In the THIEVES GUILD
